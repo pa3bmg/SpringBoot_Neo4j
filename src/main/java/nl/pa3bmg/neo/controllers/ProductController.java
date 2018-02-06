@@ -18,18 +18,23 @@ import nl.pa3bmg.neo.services.ProductService;
 @Controller
 public class ProductController {
 	private ProductService productService;
-
     private ProductToProductForm productToProductForm;
     
     @Autowired
-    public void setProductToProductForm(ProductToProductForm productToProductForm) {
-        this.productToProductForm = productToProductForm;
+    public ProductController(ProductService _productService, ProductToProductForm _productToProductForm) {
+    		productService = _productService;
+    		productToProductForm = _productToProductForm;
     }
-
-    @Autowired
-    public void setProductService(ProductService productService) {
-        this.productService = productService;
-    }
+    
+//    @Autowired
+//    public void setProductToProductForm(ProductToProductForm productToProductForm) {
+//        this.productToProductForm = productToProductForm;
+//    }
+//
+//    @Autowired
+//    public void setProductService(ProductService productService) {
+//        this.productService = productService;
+//    }
     
     @RequestMapping("/")
     public String redirToList(){

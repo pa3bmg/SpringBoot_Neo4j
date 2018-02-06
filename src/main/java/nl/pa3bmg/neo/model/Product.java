@@ -1,5 +1,6 @@
 package nl.pa3bmg.neo.model;
 
+
 import java.math.BigDecimal;
 
 import org.neo4j.ogm.annotation.GraphId;
