@@ -25,7 +25,9 @@ public class ProductServiceImpl implements ProductService {
     
 	@Override
 	public List<Product> listAll() {
+		System.out.println("AAAAA");
 		List<Product> products = new ArrayList<>();
+		System.out.println("AAAAA products size =" +products.size());
         productRepository.findAll().forEach(products::add);
         return products;
 	}

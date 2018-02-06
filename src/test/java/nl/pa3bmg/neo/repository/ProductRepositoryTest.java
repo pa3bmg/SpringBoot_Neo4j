@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 public class ProductRepositoryTest {
 
     private static final BigDecimal BIG_DECIMAL_100 = BigDecimal.valueOf(100.00);
-    private static final String PRODUCT_DESCRIPTION = "a cool product";
+    private static final String PRODUCT_DESCRIPTION = "a 2 cool product";
     private static final String IMAGE_URL = "http://an-imageurl.com/image1.jpg";
 
     @Autowired
